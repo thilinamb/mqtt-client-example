@@ -27,6 +27,6 @@ public class PublisherCallback implements MqttCallback {
 
     @Override
     public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-            logger.info("Delivery Complete!");
+        logger.info("Delivery Complete!");
     }
 }
