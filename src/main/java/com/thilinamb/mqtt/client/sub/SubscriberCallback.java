@@ -17,7 +17,7 @@ public class SubscriberCallback implements MqttCallback {
 
     @Override
     public void connectionLost(Throwable throwable) {
-
+        logger.warning("Connection Lost!");
     }
 
     @Override
