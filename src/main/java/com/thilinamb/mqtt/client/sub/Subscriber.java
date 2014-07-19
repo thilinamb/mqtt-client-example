@@ -37,11 +37,12 @@ public class Subscriber extends AbstractMqttClient{
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()){
             String line = scanner.nextLine();
-            if(line.trim().toLowerCase().equals("Exit!")){
+            if(line.trim().toLowerCase().equals("quit")){
                 break;
             }
         }
         subscriber.disconnect();
+        logger.info("Exit!");
     }
 
 }
