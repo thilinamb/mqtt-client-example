@@ -27,7 +27,7 @@ public class Subscriber extends AbstractMqttClient{
             getClient().subscribe(topic);
             logger.info("Connected to " + brokerUrl + " and subscribed to topic " + topic);
         } catch (MqttException e) {
-            logger.log(Level.SEVERE, "Error instantiating the publisher", e);
+            logger.log(Level.SEVERE, "Error instantiating the subscriber", e);
             throw e;
         }
     }
@@ -37,7 +37,7 @@ public class Subscriber extends AbstractMqttClient{
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()){
             String line = scanner.nextLine();
-            if(line.trim().toLowerCase().equals("quit")){
+            if(line.trim().toLowerCase().equals("Exit!")){
                 break;
             }
         }
