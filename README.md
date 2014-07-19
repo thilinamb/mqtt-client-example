@@ -1,4 +1,6 @@
-mqtt-client-example
+MQTT-Client-Example
 ===================
 
-MQTT publisher/subscriber example implemented using Eclipse Paho Client libraries.
+[MQTT](http://mqtt.org) publisher/subscriber example implemented using [Eclipse Paho](http://www.eclipse.org/paho/) client libraries.
+
+This is tested against the publicly hosted [Mosquitto](http://mosquitto.org) Broker on http://test.mosquitto.org (on port 1883).
